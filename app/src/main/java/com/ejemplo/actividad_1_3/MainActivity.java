@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = findViewById(R.id.recycler_contacts);
+        recyclerView = findViewById(R.id.recycler_contactos);
+
+        List<items> items = new List<items>();
 
         List<MyItem> items = new ArrayList<>();
         items.add(new MyItem("Item 1", "Description 1"));

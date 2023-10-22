@@ -8,10 +8,10 @@ import android.widget.TextView;
 
 public class contactAdapter extends RecyclerView.Adapter<contactAdapter.ViewHolder> {
 
-    private List<MyItem> items;
+    private List<Contacto> contactos;
 
-    public contactAdapter(List<MyItem> items) {
-        this.items = items;
+    public contactAdapter(List<Contacto> contactos) {
+        this.contactos = contactos;
     }
     @NonNull
     @Override
