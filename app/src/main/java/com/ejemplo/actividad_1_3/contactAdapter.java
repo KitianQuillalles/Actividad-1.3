@@ -6,12 +6,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class contactAdapter extends RecyclerView.Adapter<contactAdapter.ViewHolder> {
 
-    private List<Contacto> contactos;
+    private List<Contactos> items;
 
-    public contactAdapter(List<Contacto> contactos) {
-        this.contactos = contactos;
+    public contactAdapter(List<Contactos> items) {
+        this.items = items;
     }
     @NonNull
     @Override
@@ -31,14 +33,12 @@ public class contactAdapter extends RecyclerView.Adapter<contactAdapter.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView textViewTitle;
-        private TextView textViewDescription;
+
+
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            textViewTitle = itemView.findViewById(R.id.text_view_title);
-            textViewDescription = itemView.findViewById(R.id.text_view_description);
         }
     }
 }
