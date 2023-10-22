@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Actividad_1_3</string>
+    <string name="titulo">Lista de contactos</string>
 </resources>
