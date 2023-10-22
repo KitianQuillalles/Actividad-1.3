@@ -18,12 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recycler_contactos);
 
-        List<items> items = new List<items>();
 
-        List<MyItem> items = new ArrayList<>();
-        items.add(new MyItem("Item 1", "Description 1"));
-        items.add(new MyItem("Item 2", "Description 2"));
-        items.add(new MyItem("Item 3", "Description 3"));
+        List<Contactos> items = new ArrayList<>();
+        items.add(new Contactos(1, "Juan", "+56977623282", "juan@gmail.com"));
+        items.add(new Contactos(2, "Fernando", "+56987652390", "fernando@gmail.com"));
+        items.add(new Contactos(3, "Felipe", "+56988542300", "felipe@gmail.com"));
 
         contactAdapter adapter = new contactAdapter(items);
         recyclerView.setAdapter(adapter);
